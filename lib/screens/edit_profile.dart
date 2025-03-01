@@ -227,7 +227,7 @@ class EditProfile extends StatelessWidget {
         image: _image);
         
     // editStudent(id, name, age, place, mobile, _image!);
-    Get.put(StudentController());
+   // Get.put(StudentController());
     Get.find<StudentController>()
         .editStudentController(id, name, age, place, mobile, _image!);
 

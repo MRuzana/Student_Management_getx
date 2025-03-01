@@ -31,7 +31,7 @@ class ListDetails extends StatelessWidget {
               onPressed: () {
                 isGridViewNotifier.value = !isGridViewNotifier.value;
                 //getAllStudents();
-                Get.put(StudentController());
+              //  Get.put(StudentController());
                 Get.find<StudentController>().getAllStudentController();
 
               },

@@ -208,11 +208,12 @@ Future <void>onSubmit(BuildContext context) async{
 
   final student=StudentModel(name: name,age: age, mobile: mobile, place: place,image: _image);
   //addstudent(_student);
-  Get.put(StudentController());
+  //Get.put(StudentController());
   Get.find<StudentController>().addStudentController(student);
   Navigator.of(context).pushReplacement(MaterialPageRoute(
   builder: (context)=> ListDetails()));
 
 }
+
 }
 
